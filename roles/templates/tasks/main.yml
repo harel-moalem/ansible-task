@@ -1,0 +1,6 @@
+- name: Create server name file
+  shell: echo This servers hostname is {{ ansible_facts['hostname'] }} >> /tmp/test2  
+  register: result
+- name: Print result
+  debug:
+    var: result

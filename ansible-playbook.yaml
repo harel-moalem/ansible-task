@@ -1,0 +1,7 @@
+---
+- name: Simple play book
+  hosts: servers
+  roles:
+    - common
+    - files
+    - templates
